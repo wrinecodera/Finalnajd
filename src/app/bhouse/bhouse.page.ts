@@ -10,4 +10,8 @@ export class BhousePage {
   session: any;
   defaultHref = "";
   constructor(private route: ActivatedRoute) {}
+
+  ionViewDidLoad() {
+    console.log();
+  }
 }

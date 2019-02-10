@@ -7,7 +7,9 @@ const routes: Routes = [
     redirectTo: "/tabs/result",
     pathMatch: "full"
   },
-  { path: "", loadChildren: "./tabs/tabs.module#TabsPageModule" }
+  { path: "", loadChildren: "./tabs/tabs.module#TabsPageModule" },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' }
 ];
 
 @NgModule({

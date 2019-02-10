@@ -5,4 +5,7 @@ import { Component } from "@angular/core";
   templateUrl: "more.page.html",
   styleUrls: ["more.page.scss"]
 })
-export class MorePage {}
+export class MorePage {
+  loggedIn = false;
+  constructor() {}
+}

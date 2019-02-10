@@ -1,5 +1,28 @@
 <ion-header>
-  <ion-toolbar><ion-title> Profile </ion-title> </ion-toolbar>
+  <ion-toolbar color="primary"><ion-title> Profile </ion-title> </ion-toolbar>
 </ion-header>
 
-<ion-content>hi im profile</ion-content>
+<ion-content padding>
+  <ion-item>
+    <ion-label>Name of bhouse</ion-label>
+    <ion-input [(ngModel)]="item.name" placeholder="Melots"> </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>no. of beds</ion-label
+    ><ion-input [(ngModel)]="item.bedQty" type="number" placeholder="1">
+    </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Price</ion-label
+    ><ion-input [(ngModel)]="item.price" type="number" placeholder="1">
+    </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>location</ion-label>
+    <ion-input [(ngModel)]="item.location" placeholder="Urgello"> </ion-input>
+  </ion-item>
+  {{ item | json }}
+  <ion-button color="primary" block clear (click)="addItem(item)"
+    >Add</ion-button
+  >
+</ion-content>
